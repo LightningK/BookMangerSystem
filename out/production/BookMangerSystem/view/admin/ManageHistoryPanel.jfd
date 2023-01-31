@@ -1,0 +1,322 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"minimumSize": new java.awt.Dimension( 0, 0 )
+			"preferredSize": new java.awt.Dimension( 990, 795 )
+			"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( "" )
+							add( null )
+							add( "" )
+							add( null )
+							add( null )
+						} )
+					}, new java.util.Vector {
+						add( "编号" )
+						add( "借书人" )
+						add( "借书人编号" )
+						add( "书名" )
+						add( "书籍编号" )
+						add( "作者" )
+						add( "借书日期" )
+						add( "还书日期" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( class java.util.Date )
+						add( class java.util.Date )
+					}, new java.util.Vector {
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+					"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+					"rowHeight": 30
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "tableMousePressed", true ) )
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 0
+				"width": 990
+				"height": 575
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn_save"
+				"text": "保存"
+				"font": &Font0 new java.awt.Font( "Microsoft YaHei UI", 1, 18 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn_save", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 100
+				"height": 55
+				"x": 255
+				"y": 730
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn_delete"
+				"text": "删除"
+				"font": #Font0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn_delete", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 100
+				"height": 55
+				"x": 580
+				"y": 730
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel2"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "借书人："
+					"font": &Font1 new java.awt.Font( "Microsoft YaHei UI", 1, 18 )
+					"horizontalTextPosition": 4
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 5
+					"y": 30
+					"width": 75
+					"height": 35
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txt_UserName"
+					"font": &Font2 new java.awt.Font( "Microsoft YaHei UI", 1, 18 )
+					"editable": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 80
+					"y": 30
+					"width": 180
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 265
+				"height": 70
+				"x": 40
+				"y": 575
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel3"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "书名："
+					"font": #Font1
+					"horizontalTextPosition": 4
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 15
+					"y": 30
+					"width": 65
+					"height": 35
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txt_BookName"
+					"font": #Font2
+					"editable": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 80
+					"y": 30
+					"width": 180
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 275
+				"height": 70
+				"x": 40
+				"y": 640
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel4"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "借书日期："
+					"font": #Font1
+					"horizontalTextPosition": 4
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 5
+					"y": 30
+					"width": 100
+					"height": 35
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txt_Byear"
+					"font": #Font2
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 95
+					"y": 30
+					"width": 85
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "年"
+					"font": #Font1
+					"horizontalTextPosition": 4
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 30
+					"height": 35
+					"x": 190
+					"y": 30
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txt_Bmonth"
+					"font": #Font2
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 45
+					"height": 34
+					"x": 220
+					"y": 30
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "月"
+					"font": #Font1
+					"horizontalTextPosition": 4
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 30
+					"height": 35
+					"x": 275
+					"y": 30
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txt_Bday"
+					"font": #Font2
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 45
+					"height": 34
+					"x": 305
+					"y": 30
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "日"
+					"font": #Font1
+					"horizontalTextPosition": 4
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 30
+					"height": 35
+					"x": 360
+					"y": 30
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 405
+				"height": 70
+				"x": 470
+				"y": 575
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel5"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label7"
+					"text": "还书日期："
+					"font": #Font1
+					"horizontalTextPosition": 4
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 5
+					"y": 30
+					"width": 100
+					"height": 35
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txt_Ryear"
+					"font": #Font2
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 95
+					"y": 30
+					"width": 85
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label8"
+					"text": "年"
+					"font": #Font1
+					"horizontalTextPosition": 4
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 30
+					"height": 35
+					"x": 190
+					"y": 30
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txt_Rmonth"
+					"font": #Font2
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 45
+					"height": 34
+					"x": 220
+					"y": 30
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label9"
+					"text": "月"
+					"font": #Font1
+					"horizontalTextPosition": 4
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 30
+					"height": 35
+					"x": 275
+					"y": 30
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txt_Rday"
+					"font": #Font2
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 45
+					"height": 34
+					"x": 305
+					"y": 30
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label10"
+					"text": "日"
+					"font": #Font1
+					"horizontalTextPosition": 4
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 30
+					"height": 35
+					"x": 360
+					"y": 30
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 405
+				"height": 70
+				"x": 470
+				"y": 645
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 15, 0 )
+			"size": new java.awt.Dimension( 990, 800 )
+		} )
+	}
+}

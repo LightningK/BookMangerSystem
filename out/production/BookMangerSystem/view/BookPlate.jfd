@@ -1,0 +1,20 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) {
+			"vgap": 7
+			"hgap": 15
+			"alignment": 0
+		} ) {
+			name: "this"
+			auxiliary() {
+				"JavaCodeGenerator.variableModifiers": 1
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 975, 680 )
+		} )
+	}
+}

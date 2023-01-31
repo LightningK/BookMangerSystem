@@ -1,0 +1,87 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"title": "登录"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "STU 图 书 管 理 系 统"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 36 )
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 50
+				"y": 115
+				"width": 430
+				"height": 95
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn_login"
+				"text": "登录"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 26 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn_login", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 105
+				"y": 435
+				"height": 65
+				"width": 120
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn_signin"
+				"text": "注册"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 26 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn_signin", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 315
+				"y": 435
+				"width": 120
+				"height": 65
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField_pwd"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 190
+				"y": 335
+				"width": 240
+				"height": 45
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "密码："
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 26 )
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 85
+				"height": 65
+				"y": 325
+				"width": 110
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtField_username"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 190
+				"y": 260
+				"width": 240
+				"height": 45
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "用户名："
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 24 )
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 70
+				"height": 65
+				"y": 250
+				"width": 130
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 0 )
+			"size": new java.awt.Dimension( 545, 650 )
+		} )
+	}
+}

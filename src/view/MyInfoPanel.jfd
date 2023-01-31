@@ -1,0 +1,125 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"minimumSize": new java.awt.Dimension( 0, 0 )
+			"preferredSize": new java.awt.Dimension( 990, 795 )
+			"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lbl_icon"
+				"text": "头像"
+				"horizontalAlignment": 0
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 40
+				"y": 110
+				"width": 305
+				"height": 265
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "用户名："
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 18 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 470
+				"y": 105
+				"width": 85
+				"height": 45
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField_name"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 18 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 570
+				"y": 110
+				"width": 220
+				"height": 35
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "原密码："
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 18 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 75
+				"height": 45
+				"x": 465
+				"y": 200
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField_oldpwd"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 18 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 220
+				"height": 35
+				"x": 570
+				"y": 205
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "新密码："
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 18 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 80
+				"height": 40
+				"x": 460
+				"y": 295
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "确认新密码："
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 18 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 130
+				"height": 30
+				"x": 425
+				"y": 390
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField_Newpwd"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 18 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 220
+				"height": 35
+				"x": 570
+				"y": 295
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField_confirm"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 18 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 220
+				"height": 30
+				"x": 570
+				"y": 390
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn_save"
+				"text": "保存"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 20 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn_save", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 430
+				"y": 630
+				"width": 110
+				"height": 60
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "更改头像"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 145
+				"y": 405
+				"width": 95
+				"height": 45
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 990, 800 )
+		} )
+	}
+}

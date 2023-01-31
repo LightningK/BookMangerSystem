@@ -1,0 +1,140 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"preferredSize": new java.awt.Dimension( 0, 0 )
+			"foreground": new java.awt.Color( 255, 255, 255, 255 )
+			auxiliary() {
+				"JavaCodeGenerator.variableModifiers": 1
+			}
+			addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseEntered", "thisMouseEntered", true ) )
+			addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseExited", "thisMouseExited", true ) )
+			addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "thisMouseClicked", true ) )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lbl_image"
+				auxiliary() {
+					"JavaCodeGenerator.variableModifiers": 1
+				}
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 80
+				"y": 5
+				"width": 150
+				"height": 150
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "作者："
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 14 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 15
+				"y": 235
+				"width": 45
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "书名："
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 14 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 15
+				"y": 160
+				"width": 50
+				"height": 40
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "编号："
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 14 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 15
+				"y": 280
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn_borrow"
+				"text": "借阅"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 18 )
+				auxiliary() {
+					"JavaCodeGenerator.variableModifiers": 1
+				}
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseEntered", "btn_borrowMouseEntered", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseExited", "btn_borrowMouseExited", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 205
+				"y": 255
+				"height": 55
+				"width": 88
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "bookName"
+				"font": &Font0 new java.awt.Font( "Microsoft YaHei UI", 1, 14 )
+				"text": "三国演义"
+				auxiliary() {
+					"JavaCodeGenerator.variableModifiers": 1
+				}
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 60
+				"y": 165
+				"width": 225
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "author"
+				"font": #Font0
+				"text": "罗贯中"
+				auxiliary() {
+					"JavaCodeGenerator.variableModifiers": 1
+				}
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 145
+				"height": 30
+				"x": 60
+				"y": 235
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "bookid"
+				"font": #Font0
+				"text": "023134"
+				auxiliary() {
+					"JavaCodeGenerator.variableModifiers": 1
+				}
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 145
+				"height": 30
+				"x": 60
+				"y": 275
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "类型："
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 14 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 15
+				"y": 205
+				"width": 50
+				"height": 25
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "bookType"
+				"font": #Font0
+				"text": "历史"
+				auxiliary() {
+					"JavaCodeGenerator.variableModifiers": 1
+				}
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 225
+				"height": 30
+				"x": 60
+				"y": 200
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 300, 325 )
+		} )
+	}
+}

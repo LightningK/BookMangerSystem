@@ -1,0 +1,85 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"title": "图书管理系统"
+			"background": new java.awt.Color( 235, 238, 240, 255 )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn_library"
+				"text": "图书馆"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 26 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn_library", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 15
+				"y": 105
+				"height": 60
+				"width": 135
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn_myBook"
+				"text": "我的书架"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 26 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn_myBook", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 135
+				"height": 60
+				"x": 15
+				"y": 210
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn_history"
+				"text": "借书历史"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 26 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn_history", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 135
+				"height": 60
+				"x": 15
+				"y": 305
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn_myInfo"
+				"text": "我的资料"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 26 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn_myInfo", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 135
+				"height": 60
+				"x": 15
+				"y": 410
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn_lognOut"
+				"text": "退出登录"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 26 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn_lognOut", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 135
+				"height": 60
+				"x": 15
+				"y": 515
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.CardLayout ) ) {
+				name: "mainPanel"
+				"preferredSize": new java.awt.Dimension( 1000, 810 )
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+				"alignmentX": 0.0f
+				"alignmentY": 0.0f
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 160
+				"y": 5
+				"width": 990
+				"height": 800
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 10 )
+			"size": new java.awt.Dimension( 1160, 815 )
+		} )
+	}
+}

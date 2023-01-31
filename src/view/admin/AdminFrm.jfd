@@ -1,0 +1,84 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"title": "管理员系统"
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn_myInfo"
+				"text": "我的资料"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 26 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn_myInfo", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 135
+				"height": 60
+				"x": 15
+				"y": 440
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn_lognOut"
+				"text": "退出登录"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 26 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn_lognOut", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 135
+				"height": 60
+				"x": 15
+				"y": 535
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.CardLayout ) ) {
+				name: "mainPanel"
+				"preferredSize": new java.awt.Dimension( 1000, 810 )
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+				"alignmentX": 0.0f
+				"alignmentY": 0.0f
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 160
+				"y": 5
+				"width": 990
+				"height": 800
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn_Manage_Book"
+				"text": "管理图书"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 26 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn_Manage_Book", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 135
+				"height": 60
+				"x": 15
+				"y": 110
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn_Manage_Borrow"
+				"text": "管理借阅"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 26 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn_Manage_Borrow", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 135
+				"height": 60
+				"x": 15
+				"y": 335
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn_Manage_User"
+				"text": "管理用户"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 1, 26 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn_Manage_User", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 135
+				"height": 60
+				"x": 15
+				"y": 220
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 1160, 815 )
+			"location": new java.awt.Point( 5, 5 )
+		} )
+	}
+}
